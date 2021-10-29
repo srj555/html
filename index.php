@@ -6,5 +6,6 @@
 <meta property="al:android:url" content="spring://launch" />
 <meta property="al:android:app_name" content="Spring" />
 <meta property="al:android:package" content="com.scb.healtheco.alpha" />
+<meta property="og:type" content="mobile" />
 </head>
 </html>
