@@ -1,11 +1,29 @@
+<!DOCTYPE html>
 <html>
-<head>
-<meta property="al:ios:url" content="spring://launch" />
-<meta property="al:ios:app_store_id" content="12345" />
-<meta property="al:ios:app_name" content="Spring" />
-<meta property="al:android:url" content="spring://launch" />
-<meta property="al:android:app_name" content="Spring" />
-<meta property="al:android:package" content="com.scb.healtheco.alpha" />
-<meta property="og:type" content="mobile" />
-</head>
+<body>
+<center>
+<p>Click the button to get your coordinates.</p>
+
+<button onclick="getLocation()">Try It</button>
+
+<p id="demo"></p>
+</center>
+<script>
+var x = document.getElementById("demo");
+
+function getLocation() {
+  if (navigator.geolocation) {
+    navigator.geolocation.getCurrentPosition(showPosition);
+  } else {
+    x.innerHTML = "Geolocation is not supported by this browser.";
+  }
+}
+
+function showPosition(position) {
+  x.innerHTML = "Latitude: " + position.coords.latitude +
+  "<br>Longitude: " + position.coords.longitude;
+}
+</script>
+
+</body>
 </html>
