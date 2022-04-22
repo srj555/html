@@ -4,7 +4,7 @@
 <center>
 
 
-<a href="spring://launch">Go To SpringUp</a>
+<a href="springup://launch">Go To SpringUp</a>
 
 <p id="demo"></p>
 </center>
