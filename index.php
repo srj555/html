@@ -2,9 +2,9 @@
 <html>
 <body>
 <center>
-<p>Click the button to get your coordinates.</p>
 
-<button onclick="getLocation()">Try It</button>
+
+<a href="spring://launch">Go To SpringUp</a>
 
 <p id="demo"></p>
 </center>
